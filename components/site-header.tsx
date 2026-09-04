@@ -16,8 +16,8 @@ export function SiteHeader() {
         />
       </div>
 
-      <h1 className="relative mt-6 font-serif text-5xl font-semibold tracking-[0.08em] text-foreground md:text-7xl">
-        STARNET <span className="text-primary">Informática</span>
+      <h1 className="relative mt-6 font-serif text-5xl font-semibold uppercase tracking-[0.08em] text-foreground md:text-7xl">
+        STARNET Informática
       </h1>
 
       <p className="relative mt-4 max-w-xl text-base text-muted-foreground text-pretty md:text-lg">
