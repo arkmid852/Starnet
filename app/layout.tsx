@@ -1,12 +1,18 @@
 import { Analytics } from '@vercel/analytics/next'
 import type { Metadata, Viewport } from 'next'
-import { Rajdhani, Inter } from 'next/font/google'
+import { Rajdhani, Inter, Cormorant_SC } from 'next/font/google'
 import './globals.css'
 
 const rajdhani = Rajdhani({
   subsets: ['latin'],
   weight: ['500', '600', '700'],
   variable: '--font-rajdhani',
+})
+
+const cormorantSC = Cormorant_SC({
+  subsets: ['latin'],
+  weight: ['500', '600', '700'],
+  variable: '--font-cormorant-sc',
 })
 
 const inter = Inter({
@@ -52,7 +58,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="pt-BR" className={`bg-background ${rajdhani.variable} ${inter.variable}`}>
+    <html lang="pt-BR" className={`bg-background ${rajdhani.variable} ${inter.variable} ${cormorantSC.variable}`}>
       <body className="antialiased">
         {children}
         {process.env.NODE_ENV === 'production' && <Analytics />}
